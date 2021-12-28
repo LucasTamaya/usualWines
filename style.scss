@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100vw;
+}
+
+.header-promo{
+    width: 100%;
+    background-color: black;
+    padding: 5px 0;
+
+    p{
+        color: white;
+        text-align: center;
+    }
+}
+
+.banner{
+    width: 100%;
+    height: 100px;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    border-bottom: 4px solid black;
+
+
+
+    .banner-left{
+        height: 100%;
+        flex-basis: 90%;
+        background-color: green;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+
+        h1{
+            font-size: 50px;
+        }
+    
+        h2{
+            font-size: 30px;
+        }
+    }
+
+    .banner-right{
+        height: 100%;
+        flex-basis: 10%;
+        border-left: 4px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        p{
+            font-size: 30px;
+        }
+    }
+}
