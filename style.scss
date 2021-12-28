@@ -6,6 +6,8 @@
 
 header{
     width: 100vw;
+    position: fixed;
+    z-index: 100;
 }
 
 .header-promo{
@@ -22,7 +24,7 @@ header{
 .banner{
     width: 100%;
     height: 100px;
-    background-color: red;
+    background-color: white;
     display: flex;
     align-items: center;
     border-bottom: 4px solid black;
@@ -32,7 +34,7 @@ header{
     .banner-left{
         height: 100%;
         flex-basis: 90%;
-        background-color: green;
+        background-color: white;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -56,6 +58,46 @@ header{
         justify-content: center;
 
         p{
+            font-size: 30px;
+        }
+    }
+}
+
+.main{
+    height: 100vh;
+    width: 100vw;
+    background-image: url("./home-img.jpeg");
+    background-size: cover;
+    background-position: top center;
+    cursor: pointer;
+    position: relative;
+    // z-index: -1;
+
+    .explore-wines{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 400px;
+        height: 100px;
+        background-color: white;
+        border: 4px solid black;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+        transition: 0.2s ease;
+
+        &:hover{
+            background-color: black;
+            color: white;
+        }
+
+        p{
+            font-size: 30px;
+        }
+
+        i{
             font-size: 30px;
         }
     }
